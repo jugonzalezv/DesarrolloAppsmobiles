@@ -42,7 +42,6 @@ class MainActivity : AppCompatActivity() {
         sendButton = findViewById(R.id.sendButton)
 
         // Configurar Retrofit
-        val apiKey = "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"
         val client = OkHttpClient.Builder()
             .addInterceptor { chain ->
                 val request = chain.request().newBuilder()
